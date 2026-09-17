@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Minimal static server for previewing dist/ locally. No dependencies.
+ * Minimal static server for previewing the GitHub Pages site locally. No dependencies.
  *
  *   node tools/serve.mjs [port]
  *
- * Serves dist/ with the same URL shapes the host will use: `/` and `/ar/`
+ * Serves docs/ with the same URL shapes the host will use: `/` and `/ar/`
  * resolve to index.html, and an unknown path renders 404.html with a real
  * 404 status.
  */
@@ -15,7 +15,11 @@ import { gzipSync } from 'node:zlib';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'dist');
+const ROOT = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  '..',
+  process.env.STATIC_ROOT || 'docs'
+);
 const PORT = Number(process.argv[2]) || 4321;
 
 // Serve under a sub-path, the way a GitHub project site does
