@@ -16,7 +16,7 @@ import { chromium } from 'playwright';
 const BASE = process.argv[2] || 'http://localhost:4321';
 const AXE = 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.2/axe.min.js';
 
-const PAGES = ['/', '/implantologie.html', '/urgences-dentaires.html', '/le-cabinet.html',
+const PAGES = ['/', '/implantologie.html', '/urgences-dentaires.html',
                '/contact.html', '/ar/', '/ar/contact.html'];
 
 const VIEWS = [

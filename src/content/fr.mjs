@@ -50,7 +50,6 @@ export default {
     esthetique: 'Esthétique',
     radiologie: 'Radiologie',
     urgences: 'Urgences',
-    cabinet: 'Le cabinet',
     contact: 'Contact',
   },
 
@@ -84,11 +83,6 @@ export default {
       title: 'Urgence dentaire à Tétouan — rage de dent, abcès, dent cassée',
       description:
         'Douleur aiguë, abcès, dent cassée : appelez le 06 68 64 14 89. Créneaux d’urgence réservés chaque jour au Centre Dentaire Majorelle, Tétouan.',
-    },
-    cabinet: {
-      title: `Le cabinet et l’équipe — ${site.name}, Tétouan`,
-      description:
-        'Un cabinet dentaire neuf boulevard Mohammadia à Tétouan : radiologie intégrée, stérilisation tracée, salle d’attente calme. Le Dr Zeguendry et son équipe.',
     },
     contact: {
       title: `Contact et horaires — ${site.name}, Tétouan`,
@@ -434,43 +428,6 @@ export default {
     },
   },
 
-  // ── Le cabinet ──────────────────────────────────────────────────────────
-  cabinet: {
-    h1: 'Le cabinet',
-    lead:
-      'Un centre dentaire conçu d’un seul tenant, boulevard Mohammadia, à quelques minutes du centre de Tétouan.',
-    sections: [
-      {
-        h: 'L’accueil',
-        p: [
-          'La salle d’attente donne sur le boulevard. Elle est claire, calme, et assez grande pour qu’on ne s’y sente pas serré. Les rendez-vous sont espacés de façon à éviter l’attente debout dans un couloir.',
-          'À l’arrivée, on vous explique le déroulement de la séance avant de vous installer au fauteuil. Si c’est votre première venue, comptez une vingtaine de minutes de plus pour l’examen et le dossier.',
-        ],
-      },
-      {
-        h: 'Les salles de soins',
-        p: [
-          'Fauteuils récents, éclairage opératoire, instrumentation rotative et ultrasonique. Chaque poste dispose d’un écran pour afficher les radiographies : vous voyez ce que le praticien voit.',
-        ],
-      },
-      {
-        h: 'Stérilisation',
-        // TODO — confirm this description matches the clinic's actual protocol before publishing.
-        p: [
-          'La stérilisation occupe une salle dédiée, séparée des salles de soins. Les instruments sont nettoyés, conditionnés sous sachet, passés à l’autoclave, puis stockés scellés jusqu’à leur utilisation. Chaque cycle est documenté.',
-          'Le matériel à usage unique — aiguilles, gants, gobelets, aspirations — est ouvert devant vous.',
-        ],
-      },
-      {
-        h: 'Radiologie',
-        p: [
-          'La radiologie est intégrée au cabinet : panoramique et rétro-alvéolaire. Le cliché est disponible en quelques secondes et lu pendant la consultation, ce qui évite un second rendez-vous.',
-        ],
-      },
-    ],
-    equipmentNote: 'Photo de la salle de soins — 1600 × 1100 px',
-    sterilNote: 'Photo de la salle de stérilisation — 1600 × 1100 px',
-  },
 
   // ── Contact ─────────────────────────────────────────────────────────────
   contact: {

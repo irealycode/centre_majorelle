@@ -180,7 +180,7 @@ async function main() {
   }
 
   /* --- required root files --- */
-  for (const f of ['robots.txt', 'sitemap.xml', 'site.webmanifest', 'favicon.svg',
+  for (const f of ['robots.txt', 'sitemap.xml', 'site.webmanifest',
                    'favicon.ico', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', '_headers']) {
     if (!existsSync(path.join(DIST, f))) fail('dist', `missing ${f}`);
   }

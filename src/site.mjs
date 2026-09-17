@@ -27,7 +27,7 @@ export const site = {
   // markup-based isolation such as <bdi> cannot do.
   phoneText: '⁦' + '06 68 64 14 89' + '⁩',
   whatsapp: '212668641489',
-  email: 'contact@centredentairemajorelle.ma', // TODO real address
+  email: 'contact@centredentairemajorelle.com', // TODO real address
 
   // ── Location ───────────────────────────────────────────────────────────
   street: 'Boulevard Mohammadia',      // TODO add the street number
@@ -48,7 +48,7 @@ export const site = {
   // ── Web ────────────────────────────────────────────────────────────────
   // Scheme + host, no trailing slash. SITE_ORIGIN overrides it at build time,
   // which is how the GitHub Pages workflow injects the real published URL.
-  origin: (process.env.SITE_ORIGIN || 'https://centredentairemajorelle.ma').replace(/\/+$/, ''), // TODO real domain
+  origin: (process.env.SITE_ORIGIN || 'https://centredentairemajorelle.com').replace(/\/+$/, ''), // TODO real domain
 
   // Optional — leave empty and they disappear from the footer and the schema.
   social: {
@@ -95,7 +95,6 @@ export const pages = [
   { id: 'esthetique', slug: 'esthetique-dentaire.html',   nav: true,  priority: '0.9', service: true },
   { id: 'radiologie', slug: 'radiologie-dentaire.html',   nav: false, priority: '0.8', service: true },
   { id: 'urgences',   slug: 'urgences-dentaires.html',    nav: true,  priority: '0.9', service: true },
-  { id: 'cabinet',    slug: 'le-cabinet.html',            nav: true,  priority: '0.8' },
   { id: 'contact',    slug: 'contact.html',               nav: true,  priority: '0.8' },
 ];
 

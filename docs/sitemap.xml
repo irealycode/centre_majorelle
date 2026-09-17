@@ -2,145 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://centredentairemajorelle.ma/</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/"/>
+    <loc>https://centredentairemajorelle.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/soins-dentaires.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/soins-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/soins-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/soins-dentaires.html"/>
+    <loc>https://centredentairemajorelle.com/soins-dentaires.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/soins-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/soins-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/soins-dentaires.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/implantologie.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/implantologie.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/implantologie.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/implantologie.html"/>
+    <loc>https://centredentairemajorelle.com/implantologie.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/implantologie.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/implantologie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/implantologie.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/esthetique-dentaire.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/esthetique-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/esthetique-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/esthetique-dentaire.html"/>
+    <loc>https://centredentairemajorelle.com/esthetique-dentaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/esthetique-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/esthetique-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/esthetique-dentaire.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/radiologie-dentaire.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/radiologie-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/radiologie-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/radiologie-dentaire.html"/>
+    <loc>https://centredentairemajorelle.com/radiologie-dentaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/radiologie-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/radiologie-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/radiologie-dentaire.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/urgences-dentaires.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/urgences-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/urgences-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/urgences-dentaires.html"/>
+    <loc>https://centredentairemajorelle.com/urgences-dentaires.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/urgences-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/urgences-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/urgences-dentaires.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/le-cabinet.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/le-cabinet.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/le-cabinet.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/le-cabinet.html"/>
+    <loc>https://centredentairemajorelle.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/contact.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/contact.html"/>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://centredentairemajorelle.ma/ar/</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/"/>
+    <loc>https://centredentairemajorelle.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/ar/soins-dentaires.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/soins-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/soins-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/soins-dentaires.html"/>
+    <loc>https://centredentairemajorelle.com/ar/soins-dentaires.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/soins-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/soins-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/soins-dentaires.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/ar/implantologie.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/implantologie.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/implantologie.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/implantologie.html"/>
+    <loc>https://centredentairemajorelle.com/ar/implantologie.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/implantologie.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/implantologie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/implantologie.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/ar/esthetique-dentaire.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/esthetique-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/esthetique-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/esthetique-dentaire.html"/>
+    <loc>https://centredentairemajorelle.com/ar/esthetique-dentaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/esthetique-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/esthetique-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/esthetique-dentaire.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/ar/radiologie-dentaire.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/radiologie-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/radiologie-dentaire.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/radiologie-dentaire.html"/>
+    <loc>https://centredentairemajorelle.com/ar/radiologie-dentaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/radiologie-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/radiologie-dentaire.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/radiologie-dentaire.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/ar/urgences-dentaires.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/urgences-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/urgences-dentaires.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/urgences-dentaires.html"/>
+    <loc>https://centredentairemajorelle.com/ar/urgences-dentaires.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/urgences-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/urgences-dentaires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/urgences-dentaires.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://centredentairemajorelle.ma/ar/le-cabinet.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/le-cabinet.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/le-cabinet.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/le-cabinet.html"/>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://centredentairemajorelle.ma/ar/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.ma/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.ma/ar/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.ma/contact.html"/>
+    <loc>https://centredentairemajorelle.com/ar/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://centredentairemajorelle.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://centredentairemajorelle.com/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://centredentairemajorelle.com/contact.html"/>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

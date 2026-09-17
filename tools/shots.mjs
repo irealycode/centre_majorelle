@@ -27,7 +27,6 @@ const PAGES = [
   ['home', '/'],
   ['implants', '/implantologie.html'],
   ['urgences', '/urgences-dentaires.html'],
-  ['cabinet', '/le-cabinet.html'],
   ['contact', '/contact.html'],
   ['ar-home', '/ar/'],
   ['ar-implants', '/ar/implantologie.html'],

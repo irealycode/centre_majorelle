@@ -40,13 +40,13 @@ street number, opening hours, Google Business Profile, social links, the
 doctor's Arabic name/title, and several clinical statements. Search the source
 files for `TODO` before launch.
 
-Also replace the placeholder photography for the dentist, treatment room and
-sterilization room with genuine clinic photos.
+Also replace the placeholder portrait of the dentist on the home page with a
+genuine photo.
 
 ## SEO domain setup
 
 The static pages preserve the original canonical URLs and structured data for
-`centredentairemajorelle.ma`. If the final public domain differs, replace that
+`centredentairemajorelle.com`. If the final public domain differs, replace that
 domain in the HTML files and `docs/sitemap.xml` before submitting the sitemap
 to Google Search Console. Do not leave a canonical URL pointing to a domain
 you do not control.

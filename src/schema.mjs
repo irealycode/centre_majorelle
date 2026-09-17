@@ -99,7 +99,6 @@ export function dentistNode(L) {
     name: L === 'ar' ? site.dentistAr : site.dentist,
     jobTitle: L === 'ar' ? 'جرّاح أسنان' : site.dentistHonorific,
     worksFor: { '@id': CLINIC_ID },
-    url: url(L, 'cabinet'),
   };
 }
 

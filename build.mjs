@@ -18,7 +18,7 @@ import { site, locales, pages, href, url, asset, basePath } from './src/site.mjs
 import fr from './src/content/fr.mjs';
 import ar from './src/content/ar.mjs';
 import {
-  layout, homeMain, serviceMain, cabinetMain, contactMain, notFoundMain,
+  layout, homeMain, serviceMain, contactMain, notFoundMain,
   setImageManifest,
 } from './src/render.mjs';
 import {
@@ -128,7 +128,6 @@ function schemaFor(L, t, pageId) {
 
 function mainFor(L, t, pageId) {
   if (pageId === 'home') return homeMain(L, t);
-  if (pageId === 'cabinet') return cabinetMain(L, t);
   if (pageId === 'contact') return contactMain(L, t);
   if (SERVICE_IDS.includes(pageId)) return serviceMain(L, t, pageId);
   throw new Error(`No renderer for page "${pageId}"`);
@@ -188,19 +187,6 @@ function webmanifest() {
       { src: asset('/icon-512.png'), sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ],
   }, null, 2);
-}
-
-/**
- * Favicon: the same tooth silhouette as the app icons, filled rather than
- * outlined. At 16px an outline plus the inner monogram turns to mud, so the
- * small mark is deliberately the simplified one.
- */
-function faviconSvg() {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 28 32" width="28" height="32">
-  <path d="M12 2.4C7.6 2.4 4 4.8 4 9.4c0 3.2.9 5 1.6 7.8.6 2.4.7 5.4 1 7.6.2 1.6.8 2.6 1.9 2.6 1.2 0 1.7-1.1 1.9-2.8.2-1.8.4-4 1.6-4s1.4 2.2 1.6 4c.2 1.7.7 2.8 1.9 2.8 1.1 0 1.7-1 1.9-2.6.3-2.2.4-5.2 1-7.6.7-2.8 1.6-4.6 1.6-7.8 0-4.6-3.6-7-8-7Z"
-        fill="#3056cd"/>
-</svg>
-`;
 }
 
 /**
@@ -337,7 +323,6 @@ async function main() {
   await writeFile(path.join(DIST, 'sitemap.xml'), sitemap(), 'utf8');
   await writeFile(path.join(DIST, 'robots.txt'), robots(), 'utf8');
   await writeFile(path.join(DIST, 'site.webmanifest'), webmanifest(), 'utf8');
-  await writeFile(path.join(DIST, 'favicon.svg'), faviconSvg(), 'utf8');
   await writeFile(path.join(DIST, '_headers'), headers(), 'utf8');
 
   // GitHub Pages runs Jekyll over the upload unless told not to, and Jekyll

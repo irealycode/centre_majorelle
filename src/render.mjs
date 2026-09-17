@@ -228,7 +228,6 @@ function footer(L, t) {
           <nav aria-labelledby="f-clinic">
             <h2 class="footer__t" id="f-clinic">${txt(t.footer.clinicTitle)}</h2>
             <ul class="footer__list">
-              <li><a href="${href(L, 'cabinet')}">${txt(t.nav.cabinet)}</a></li>
               <li><a href="${href(L, 'contact')}">${txt(t.nav.contact)}</a></li>
               <li><a href="${href(other, 'home')}" hreflang="${locales[other].htmlLang}">${txt(t.ui.langSwitch)}</a></li>
               ${socials.map(([k, v]) => `<li><a href="${esc(v)}" rel="noopener">${k[0].toUpperCase() + k.slice(1)}</a></li>`).join('\n              ')}
@@ -333,7 +332,6 @@ export function layout(L, t, { pageId, title, description, schema, main, ogImage
   <link rel="preload" href="${asset('/assets/fonts/readexpro-latin.woff2')}" as="font" type="font/woff2" crossorigin>${preloadAr}
   <link rel="stylesheet" href="${asset('/assets/css/site.css')}">
 
-  <link rel="icon" href="${asset('/favicon.svg')}" type="image/svg+xml">
   <link rel="icon" href="${asset('/favicon.ico')}" sizes="32x32">
   <link rel="apple-touch-icon" href="${asset('/apple-touch-icon.png')}">
   <link rel="manifest" href="${asset('/site.webmanifest')}">
@@ -452,7 +450,6 @@ export function homeMain(L, t) {
             <div class="prose" data-reveal>
               ${t.home.cabinet.body.map((p) => `<p>${txt(p)}</p>`).join('\n              ')}
             </div>
-            <p data-reveal><a class="btn btn--ghost" href="${href(L, 'cabinet')}">${txt(t.nav.cabinet)}${icon.arrow()}</a></p>
           </div>
           <figure class="figure" data-reveal>
             ${picture({ name: 'facade-nuit', alt: t.home.cabinet.alt, sizes: '(min-width: 900px) 46vw, 100vw' })}
@@ -569,85 +566,6 @@ ${faqBlock(t, s.faq, t.ui.questions)}
         <h2 class="h4">${txt(t.ui.allServices)}</h2>
         <div class="related">
           ${others.map((o) => `<a class="chip" href="${href(L, o)}">${txt(t.services[o].name)}</a>`).join('\n          ')}
-          <a class="chip" href="${href(L, 'cabinet')}">${txt(t.nav.cabinet)}</a>
-        </div>
-      </div>
-    </section>`;
-}
-
-export function cabinetMain(L, t) {
-  const trail = [
-    { name: t.ui.homeLabel, path: href(L, 'home') },
-    { name: t.nav.cabinet, path: href(L, 'cabinet') },
-  ];
-  return `    <div class="wrap">${crumbs(L, t, trail)}</div>
-
-    <section class="page-head">
-      <div class="wrap">
-        <h1 class="display" style="max-width:14ch" data-reveal="rise">${txt(t.cabinet.h1)}</h1>
-        <p class="lead" data-reveal>${txt(t.cabinet.lead)}</p>
-      </div>
-    </section>
-
-    <section class="section section--flush-top">
-      <div class="wrap">
-        <figure class="figure" data-reveal="wipe">
-          ${picture({ name: 'reception', alt: t.home.heroAlt, sizes: '(min-width: 1240px) 1240px, 100vw', priority: true })}
-        </figure>
-      </div>
-    </section>
-
-    <section class="section section--tight">
-      <div class="wrap">
-        <div class="split">
-          <div class="split__copy">
-            <h2 class="h2" data-reveal="rise">${txt(t.cabinet.sections[0].h)}</h2>
-            <div class="prose" data-reveal>${t.cabinet.sections[0].p.map((p) => `<p>${txt(p)}</p>`).join('')}</div>
-          </div>
-          <div class="split__copy">
-            <h2 class="h2" data-reveal="rise">${txt(t.cabinet.sections[1].h)}</h2>
-            <div class="prose" data-reveal>${t.cabinet.sections[1].p.map((p) => `<p>${txt(p)}</p>`).join('')}</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="lightline wrap">
-
-    <section class="section">
-      <div class="wrap">
-        <div class="split">
-          <div class="split__copy">
-            <h2 class="h2" data-reveal="rise">${txt(t.cabinet.sections[2].h)}</h2>
-            <div class="prose" data-reveal>${t.cabinet.sections[2].p.map((p) => `<p>${txt(p)}</p>`).join('')}</div>
-          </div>
-          <div data-reveal>${slot(t, t.ui.photoSlot, t.cabinet.sterilNote)}</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--tight">
-      <div class="wrap">
-        <div class="split split--reverse">
-          <div class="split__copy">
-            <h2 class="h2" data-reveal="rise">${txt(t.cabinet.sections[3].h)}</h2>
-            <div class="prose" data-reveal>${t.cabinet.sections[3].p.map((p) => `<p>${txt(p)}</p>`).join('')}</div>
-            <p data-reveal><a class="btn btn--ghost" href="${href(L, 'radiologie')}">${txt(t.services.radiologie.name)}${icon.arrow()}</a></p>
-          </div>
-          <div data-reveal>${slot(t, t.ui.photoSlot, t.cabinet.equipmentNote)}</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="dr2-h">
-      <div class="wrap">
-        <div class="split">
-          <div class="split__copy">
-            <h2 class="h2" id="dr2-h" data-reveal="rise">${nl2(t.home.dentist.h2)}</h2>
-            <div class="prose" data-reveal>${t.home.dentist.body.map((p) => `<p>${txt(p)}</p>`).join('')}</div>
-            <blockquote class="quote" data-reveal>${txt(t.home.dentist.quote)}</blockquote>
-          </div>
-          <div data-reveal>${slot(t, t.ui.photoSlot, t.home.dentist.photoNote, true)}</div>
         </div>
       </div>
     </section>`;

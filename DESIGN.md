@@ -86,9 +86,10 @@ cuts it into three pieces — monogram, MAJORELLE wordmark, and the stacked lock
 height); the footer has the room for the lockup as drawn. The master is white-on-transparent, so
 the ink and white versions are recoloured at build time — no runtime filter, no colour shift.
 
-Icons split the same way: the real monogram at 192/512/apple-touch, a simplified solid tooth for
-the favicon. The monogram is a hairline outline whose interior cannot be filled automatically
-(the M's strokes partition it), and at 16px an outline that thin is mud.
+Every icon is the real monogram with no text: white on Majorelle blue at 192/512/apple-touch, and
+the bare monogram in Majorelle blue on transparency for the favicon (`favicon.ico`, 16–64px), its
+hairline strokes thickened per size by `tools/icons.py` so the outline survives at 16px. There is no SVG favicon — the monogram has no
+vector source, and browsers would pick an SVG over the ICO.
 
 ```css
 --font: 'Readex Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -173,6 +174,5 @@ Real clinic photography leads. `assets/img/` source of truth; build emits AVIF +
 | Exterior at night | **Real** — `IMG_6986.PNG` |
 | Tétouan, the white city | Wikimedia Commons, © Ideophagous, CC BY-SA 4.0 — credited in footer |
 | Dr. Zeguendry portrait | **Slot** — must be a real photo of the dentist |
-| Treatment room, sterilisation, panoramic unit | **Slots** |
 
 Alt text is voice, in the page's own language, and describes the room — not "dental clinic".
