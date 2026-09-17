@@ -1,0 +1,26 @@
+{
+  "name": "centre-dentaire-majorelle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site web du Centre Dentaire Majorelle — Tétouan, Maroc",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "images": "python tools/images.py && python tools/logo.py && python tools/icons.py",
+    "serve": "node tools/serve.mjs",
+    "check": "node tools/check.mjs",
+    "contrast": "node tools/contrast.mjs",
+    "a11y": "node tools/a11y.mjs",
+    "shots": "node tools/shots.mjs",
+    "dev": "node build.mjs && node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.62.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

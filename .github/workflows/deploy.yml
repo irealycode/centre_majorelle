@@ -1,0 +1,75 @@
+# Build the site and publish it to GitHub Pages on every push to `main`.
+#
+# One-time setup: repository Settings → Pages → Source: "GitHub Actions".
+#
+# The published URL is not hard-coded. `configure-pages` reports where Pages
+# will actually serve the site — `https://nom.github.io/nom-du-depot/`, or your
+# own domain once one is set in Settings → Pages — and the build uses it for
+# every canonical URL, hreflang link, sitemap entry and asset path. Moving to a
+# custom domain later needs no edit here.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # esbuild only (minification). Playwright is optional and only used for
+      # local screenshots, so it is skipped here.
+      - name: Install build dependencies
+        run: npm ci --omit=optional
+
+      - name: Read the Pages URL
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build
+        env:
+          SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+        run: node build.mjs
+
+      # Fails the deploy on a broken link, a missing canonical, invalid
+      # structured data or an asset path missing the base path.
+      - name: Check
+        env:
+          SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: node tools/check.mjs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4
