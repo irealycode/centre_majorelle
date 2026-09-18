@@ -13,7 +13,7 @@ export const site = {
   shortName: 'Majorelle',
   tagline: 'Dental Clinic',
   dentist: 'Dr Zeguendry',              // read from the clinic's own logo artwork
-  dentistAr: 'الدكتور زكندري',          // TODO confirm the Arabic spelling with the clinic
+  dentistAr: 'الدكتور الزكندري',          // spelling confirmed by the clinic
   dentistHonorific: 'Chirurgien-dentiste', // TODO confirm title / specialty
 
   // ── Contact ────────────────────────────────────────────────────────────
