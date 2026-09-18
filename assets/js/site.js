@@ -329,7 +329,7 @@
           ' ' +
           (t.days && t.days[nextOpen.day] ? t.days[nextOpen.day] : '') +
           ' ' +
-          (t.opensAt || 'at') +
+          (t.at || 'at') +
           ' ' +
           nextOpen.when;
     }

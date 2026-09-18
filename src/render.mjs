@@ -238,6 +238,7 @@ function footer(L, t) {
             <h2 class="footer__t">${txt(t.footer.contactTitle)}</h2>
             <ul class="footer__list">
               <li><a class="num" href="${telHref}"><bdi>${txt(site.phoneDisplay)}</bdi></a></li>
+              <li><a class="num" href="tel:${esc(site.phoneFixe)}"><bdi>${txt(site.phoneFixeDisplay)}</bdi></a></li>
               <li><a href="${esc(waHref(t.ui.waMessage))}" rel="noopener">${txt(t.ui.whatsapp)}</a></li>
               <li><a href="mailto:${esc(site.email)}">${txt(site.email)}</a></li>
               <li><a href="${esc(mapsHref)}" rel="noopener">${txt(L === 'ar' ? site.streetAr : site.street)}<br>${txt(L === 'ar' ? site.cityAr : site.city)} ${txt(site.postal)}</a></li>
@@ -283,7 +284,10 @@ export function layout(L, t, { pageId, title, description, schema, main, ogImage
     strings: {
       open: t.ui.open, closed: t.ui.closed,
       closesAt: t.ui.closesAt, opensAt: t.ui.opensAt, opensDay: t.ui.opensDay,
-      days: t.days,
+      at: t.ui.at,
+      // Lowercase where the locale wants a weekday inside a sentence; the
+      // capitalised list stays for the hours table's row headers.
+      days: t.daysInSentence || t.days,
     },
   }).replace(/</g, '\\u003c');
 
@@ -452,7 +456,7 @@ export function homeMain(L, t) {
             </div>
           </div>
           <figure class="figure" data-reveal>
-            ${picture({ name: 'facade-nuit', alt: t.home.cabinet.alt, sizes: '(min-width: 900px) 46vw, 100vw' })}
+            ${picture({ name: 'salle-soins', alt: t.home.cabinet.salleAlt, sizes: '(min-width: 900px) 46vw, 100vw' })}
           </figure>
         </div>
 
@@ -475,7 +479,9 @@ export function homeMain(L, t) {
             <blockquote class="quote" data-reveal>${txt(t.home.dentist.quote)}</blockquote>
           </div>
           <div data-reveal>
-            ${slot(t, t.ui.photoSlot, t.home.dentist.photoNote, true)}
+            <figure class="figure" style="max-inline-size:22rem;margin-inline:auto">
+              ${picture({ name: 'dr-zeguendry', alt: t.home.dentist.photoAlt, sizes: '(min-width: 900px) 22rem, 100vw' })}
+            </figure>
           </div>
         </div>
       </div>
@@ -599,6 +605,10 @@ export function contactMain(L, t) {
             <span class="detail__v num"><a href="${telHref}"><bdi>${txt(site.phoneDisplay)}</bdi></a></span>
           </div>
           <div class="detail">
+            <span class="detail__k">${txt(t.contact.phoneFixeTitle)}</span>
+            <span class="detail__v num"><a href="tel:${esc(site.phoneFixe)}"><bdi>${txt(site.phoneFixeDisplay)}</bdi></a></span>
+          </div>
+          <div class="detail">
             <span class="detail__k">WhatsApp</span>
             <span class="detail__v num"><a href="${esc(waHref(t.ui.waMessage))}" rel="noopener"><bdi>${txt(site.phoneIntl)}</bdi></a></span>
           </div>
@@ -614,6 +624,10 @@ export function contactMain(L, t) {
 
         <div data-reveal>
           <p><a class="btn btn--ghost" href="${esc(mapsHref)}" rel="noopener">${icon.pin()}<span>${txt(t.ui.directionsLong)}</span></a></p>
+
+          <figure class="figure" style="margin-block-start:2rem" data-reveal>
+            ${picture({ name: 'facade-nuit', alt: t.home.cabinet.alt, sizes: '(min-width: 880px) 46vw, 100vw' })}
+          </figure>
 
           <h2 class="h4" style="margin-block-start:2.5rem">${txt(t.contact.accessTitle)}</h2>
           <div class="prose" style="font-size:var(--t-body);margin-block-start:0.75rem">

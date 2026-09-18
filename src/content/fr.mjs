@@ -21,6 +21,7 @@ export default {
     closesAt: 'ferme à',
     opensAt: 'ouvre à',
     opensDay: 'ouvre',
+    at: 'à',
     today: 'aujourd’hui',
     closedToday: 'Fermé aujourd’hui',
     hoursTitle: 'Horaires',
@@ -42,6 +43,9 @@ export default {
   },
 
   days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+  // Same names for "ouvre samedi à 10:00" — French keeps weekdays lowercase
+  // inside a sentence.
+  daysInSentence: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
   daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
 
   nav: {
@@ -57,17 +61,17 @@ export default {
     home: {
       title: `Dentiste à Tétouan — ${site.name}`,
       description:
-        'Centre dentaire à Tétouan, boulevard Mohammadia. Soins, implantologie, esthétique et radiologie panoramique sur place. Du lundi au samedi — 06 68 64 14 89.',
+        'Centre dentaire à Tétouan, avenue Oujda. Soins, implantologie, esthétique et radiologie panoramique sur place. Du lundi au samedi — 06 68 64 14 89.',
     },
     soins: {
       title: 'Soins dentaires à Tétouan — caries, détartrage, dévitalisation',
       description:
-        'Caries, détartrage, traitement de racine, extraction : les soins dentaires courants à Tétouan, boulevard Mohammadia. Rendez-vous au 06 68 64 14 89.',
+        'Caries, détartrage, traitement de racine, extraction : les soins dentaires courants à Tétouan, avenue Oujda. Rendez-vous au 06 68 64 14 89.',
     },
     implants: {
       title: 'Implant dentaire à Tétouan — implantologie | Centre Majorelle',
       description:
-        'Pose d’implants dentaires à Tétouan : bilan radiologique, devis écrit, couronne sur implant. Centre Dentaire Majorelle, boulevard Mohammadia. 06 68 64 14 89.',
+        'Pose d’implants dentaires à Tétouan : bilan radiologique, devis écrit, couronne sur implant. Centre Dentaire Majorelle, avenue Oujda. 06 68 64 14 89.',
     },
     esthetique: {
       title: 'Esthétique dentaire à Tétouan — blanchiment, facettes, couronnes',
@@ -77,7 +81,7 @@ export default {
     radiologie: {
       title: 'Radiologie dentaire à Tétouan — panoramique sur place',
       description:
-        'Radiographie panoramique et rétro-alvéolaire réalisées sur place à Tétouan, lues pendant la consultation. Centre Dentaire Majorelle, boulevard Mohammadia.',
+        'Radiographie panoramique et rétro-alvéolaire réalisées sur place à Tétouan, lues pendant la consultation. Centre Dentaire Majorelle, avenue Oujda.',
     },
     urgences: {
       title: 'Urgence dentaire à Tétouan — rage de dent, abcès, dent cassée',
@@ -87,13 +91,13 @@ export default {
     contact: {
       title: `Contact et horaires — ${site.name}, Tétouan`,
       description:
-        'Adresse, horaires, plan et téléphone du Centre Dentaire Majorelle, boulevard Mohammadia à Tétouan. Ouvert du lundi au samedi — 06 68 64 14 89.',
+        'Adresse, horaires, plan et téléphone du Centre Dentaire Majorelle, avenue Oujda à Tétouan. Ouvert du lundi au samedi — 06 68 64 14 89.',
     },
   },
 
   // ── Home ────────────────────────────────────────────────────────────────
   home: {
-    h1: 'Votre dentiste à Tétouan,\nboulevard Mohammadia.',
+    h1: 'Votre dentiste à Tétouan,\navenue Oujda.',
     lead:
       'Soins, implantologie, esthétique et radiologie panoramique dans un cabinet neuf, calme et entièrement équipé. Le Dr Zeguendry et son équipe vous reçoivent du lundi au samedi.',
     heroAlt:
@@ -108,11 +112,13 @@ export default {
     cabinet: {
       h2: 'Un cabinet neuf, pensé\npour qu’on s’y sente bien.',
       body: [
-        'Le centre a été conçu d’un seul tenant : fauteuils récents, salle de stérilisation dédiée, radiologie intégrée. La salle d’attente donne sur le boulevard et reste calme — pas de couloir, pas de file d’attente debout.',
+        'Le centre a été conçu d’un seul tenant : fauteuils récents, salle de stérilisation dédiée, radiologie intégrée. La salle d’attente donne sur l’avenue et reste calme — pas de couloir, pas de file d’attente debout.',
         'C’est un détail, mais c’est le premier que l’on remarque quand on a peur du dentiste : l’endroit est clair, silencieux, et on sait où l’on va.',
       ],
       alt:
-        'La façade du Centre Dentaire Majorelle, boulevard Mohammadia à Tétouan, enseigne bleue éclairée le soir.',
+        'La façade du Centre Dentaire Majorelle, avenue Oujda à Tétouan, enseigne bleue éclairée le soir.',
+      salleAlt:
+        'Une salle de soins du Centre Dentaire Majorelle : fauteuil noir, unit et écran sur bras articulé, lignes de lumière au plafond, sol en marbre blanc.',
       facts: [
         {
           t: 'Radiologie sur place',
@@ -127,8 +133,8 @@ export default {
           d: 'L’équipe reçoit dans les deux langues, à l’accueil comme au fauteuil.', // TODO add Spanish if true
         },
         {
-          t: 'Sur le boulevard',
-          d: 'Entrée directe boulevard Mohammadia, au niveau du trottoir.', // TODO confirm step-free access
+          t: 'Avenue Oujda',
+          d: '4 rue A, avenue Oujda. Le cabinet est au premier étage.',
         },
       ],
     },
@@ -142,7 +148,8 @@ export default {
       ],
       quote:
         'Un patient qui comprend ce qu’on lui fait a beaucoup moins peur. C’est la moitié du travail.',
-      photoNote: 'Photo du Dr Zeguendry — 800 × 1000 px',
+      photoAlt:
+        'Le Dr Zeguendry en blouse de protection, devant le comptoir d’accueil du Centre Dentaire Majorelle.',
     },
 
     city: {
@@ -432,15 +439,16 @@ export default {
   // ── Contact ─────────────────────────────────────────────────────────────
   contact: {
     h1: 'Contact et horaires',
-    lead: 'Boulevard Mohammadia, Tétouan. Le téléphone reste le moyen le plus rapide de nous joindre.',
+    lead: '4 rue A, avenue Oujda — Tétouan. Le téléphone reste le moyen le plus rapide de nous joindre.',
     addressTitle: 'Adresse',
     phoneTitle: 'Téléphone',
+    phoneFixeTitle: 'Ligne fixe',
     emailTitle: 'E-mail',
     hoursTitle: 'Horaires d’ouverture',
     accessTitle: 'Venir au cabinet',
     accessBody: [
-      'Le cabinet se trouve sur le boulevard Mohammadia, l’enseigne bleue est visible depuis la rue — de jour comme de nuit.', // TODO add landmarks: near which crossroads / which bus lines
-      'Stationnement possible le long du boulevard selon l’heure. Si vous venez de Martil ou de M’diq, comptez une quinzaine de minutes hors heures de pointe.', // TODO confirm parking
+      'Le cabinet se trouve au 4, rue A, avenue Oujda, au premier étage. L’enseigne bleue est visible depuis la rue — de jour comme de nuit.',
+      'Stationnement possible le long de l’avenue selon l’heure. Si vous venez de Martil ou de M’diq, comptez une quinzaine de minutes hors heures de pointe.', // TODO confirm parking
     ],
     noteTitle: 'Avant d’appeler',
     noteBody:

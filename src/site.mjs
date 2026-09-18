@@ -27,11 +27,14 @@ export const site = {
   // markup-based isolation such as <bdi> cannot do.
   phoneText: '⁦' + '06 68 64 14 89' + '⁩',
   whatsapp: '212668641489',
+  // Second line at the clinic — a landline, no WhatsApp on it.
+  phoneFixe: '+212539998662',
+  phoneFixeDisplay: '05 39 99 86 62',
   email: 'contact@centredentairemajorelle.com', // TODO real address
 
   // ── Location ───────────────────────────────────────────────────────────
-  street: 'Boulevard Mohammadia',      // TODO add the street number
-  streetAr: 'شارع محمدية',
+  street: '4 rue A, avenue Oujda, 1er étage',
+  streetAr: '4 زنقة A، شارع وجدة، الطابق الأول',
   city: 'Tétouan',
   cityAr: 'تطوان',
   postal: '93000',
@@ -59,14 +62,14 @@ export const site = {
 
   // ── Opening hours ──────────────────────────────────────────────────────
   // 0 = Sunday … 6 = Saturday. Multiple intervals per day are supported.
-  // TODO confirm every one of these against the real timetable.
+  // Confirmed by the clinic.
   hours: {
-    1: [['09:00', '13:00'], ['15:00', '19:30']],
-    2: [['09:00', '13:00'], ['15:00', '19:30']],
-    3: [['09:00', '13:00'], ['15:00', '19:30']],
-    4: [['09:00', '13:00'], ['15:00', '19:30']],
-    5: [['09:00', '13:00'], ['15:00', '19:30']],
-    6: [['09:00', '14:00']],
+    1: [['10:00', '14:00'], ['15:00', '18:00']],
+    2: [['10:00', '14:00'], ['15:00', '18:00']],
+    3: [['10:00', '14:00'], ['15:00', '18:00']],
+    4: [['10:00', '14:00'], ['15:00', '18:00']],
+    5: [['10:00', '14:00'], ['15:00', '18:00']],
+    6: [['10:00', '14:00']],
     0: [],
   },
 

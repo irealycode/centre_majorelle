@@ -33,6 +33,12 @@ PLAN = {
     "facade-nuit": dict(src="facade-nuit.png", ratio=4 / 3,  anchor=0.50),
     "tetouan":     dict(src="tetouan.jpg",     ratio=16 / 9, anchor=0.42,
                         cap=1280, quality={"jpg": 74, "webp": 68, "avif": 44}),
+    # Portraits. Both sources are shot vertically; 4:5 is the tallest ratio the
+    # `.figure` / `.slot--portrait` columns hold without pushing the copy beside
+    # them off-screen. The anchors keep the subject's head, and the treatment
+    # room's ceiling lights, inside the crop.
+    "dr-zeguendry": dict(src="dr-zeguendry.png", ratio=4 / 5, anchor=0.35),
+    "salle-soins":  dict(src="salle-soins.png",  ratio=4 / 5, anchor=0.45),
 }
 
 # Social card: one fixed-size crop, not a responsive set.

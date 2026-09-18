@@ -49,7 +49,7 @@ export function clinicNode(L, services) {
     name: isAr ? site.nameAr : site.name,
     alternateName: isAr ? site.name : site.nameAr,
     url: url(L, 'home'),
-    telephone: site.phone,
+    telephone: [site.phone, site.phoneFixe].filter(Boolean),
     email: site.email,
     image: [
       `${site.origin}${asset('/assets/img/reception-1280.jpg')}`,
